@@ -1,0 +1,173 @@
+{
+  "packages": [
+    {
+      "name": "Flinders",
+	"maintainer": "Flinders University",
+      "websiteURL": "https://flindersuni.atlassian.net/wiki/spaces/FLINDUINO/",
+	"email": "packages@chipkit.net",
+      "platforms": [
+        {
+          "name": "Flinduino",
+          "architecture": "pic32",
+          "version": "2.1.0",
+          "category": "pic32",
+          "url": "https://github.com/craig-dawson/Flinduino/releases/download/2.1.0F/flinduino-core-master-v2.1.0.zip",
+          "archiveFileName": "flinduino-core-master-v2.1.0.zip",
+          "checksum": "SHA-256:6e31fc98ccb5db044b8800fc6280e8a9c2c41a1efb7f2ddaf6cff0e95b6b606c",
+          "size": "7352058",
+          "help": {
+            "online": "https://flindersuni.atlassian.net/wiki/spaces/FLINDUINO/"
+          },
+          "boards": [
+            {"name": "Flinders Flinduino"}
+          ],
+          "toolsDependencies": [
+            {
+              "packager": "Flinders",
+              "version": "1.43-pic32gcc",
+              "name": "pic32-tools"
+            }, 
+            {
+              "packager": "Flinders",
+              "version": "v2.1.46",
+              "name": "pic32prog"
+            },
+            {
+              "packager": "Flinders",
+              "version": "v2",
+              "name": "drivers-windows"
+            }
+          ]
+        }
+        
+      ],
+      "tools": [
+        {
+          "version": "1.43-pic32gcc",
+          "name": "pic32-tools",
+          "systems": [
+            {
+              "url": "https://github.com/chipKIT32/chipKIT-compiler-builds/releases/download/1.43-3/pic32-tools-143-3-win32-image.tar.gz",
+              "checksum": "SHA-256:24e2f82884efd5fbbab7d11a6333995187b9a7c4a8a3abc1fade69904ee9fc7a",
+              "host": "i686-mingw32",
+              "archiveFileName": "pic32-tools-143-3-win32-image.tar.gz",
+              "size": "132994414"
+            }, 
+            {
+              "url": "https://github.com/chipKIT32/chipKIT-compiler-builds/releases/download/1.43-3/pic32-tools-143-3-Darwin-image.tar.gz",
+              "checksum": "SHA-256:8b7e4c659789f3c930499005c83c91ddaac24f0f80396947a60ce385a66cb05d",
+              "host": "i386-apple-darwin",
+              "archiveFileName": "pic32-tools-143-3-Darwin-image.tar.gz",
+              "size": "132122806"
+            }, 
+            {
+              "url": "https://github.com/chipKIT32/chipKIT-compiler-builds/releases/download/1.43-3/pic32-tools-143-3-Linux32-image.tar.gz",
+              "checksum": "SHA-256:A9C9254B8563D48736429A37AA6BA96C6AC28EA5E0A3E7F9B75E860F74F2A50F",
+              "host": "x86_64-linux-gnu",
+              "archiveFileName": "pic32-tools-143-3-Linux32-image.tar.gz",
+              "size": "134890316"
+            }, 
+            {
+              "url": "https://github.com/chipKIT32/chipKIT-compiler-builds/releases/download/1.43-3/pic32-tools-143-3-Linux32-image.tar.gz",
+              "checksum": "SHA-256:A9C9254B8563D48736429A37AA6BA96C6AC28EA5E0A3E7F9B75E860F74F2A50F",
+              "host": "i686-pc-linux-gnu",
+              "archiveFileName": "pic32-tools-143-3-Linux32-image.tar.gz",
+              "size": "134890316"
+            }, 
+            {
+              "url": "https://github.com/chipKIT32/chipKIT-compiler-builds/releases/download/1.43-3/pic32-tools-143-3-arm-linux-image.tar.gz",
+              "checksum": "SHA-256:5b4a6cc16bcf3455db5fe9e229212385177b3c4064b7bff31dfb043379c39ce3",
+              "host": "arm-linux-gnueabihf",
+              "archiveFileName": "pic32-tools-143-3-arm-linux-image.tar.gz",
+              "size": "134299837"
+            }
+          ]
+        },
+        {
+          "name": "pic32prog",
+          "version": "v2.1.46",
+          "systems": [
+            {
+              "host": "i386-apple-darwin11",
+              "url": "https://github.com/majenkotech/pic32prog-autotools/releases/download/2.1.46/pic32prog-osx-fat-2.1.46.tar.gz",
+              "archiveFileName": "pic32prog-osx-fat-2.1.46.tar.gz",
+              "size": "222174",
+              "checksum": "SHA-256:119ae88dfe1155671ff71d19d5c6b5fdd3f0594d083fc73aa821a9374a1934a9"
+            },
+            {
+              "host": "x86_64-linux-gnu",
+              "url": "https://github.com/majenkotech/pic32prog-autotools/releases/download/2.1.46/pic32prog-debian-64-2.1.46.tar.gz",
+              "archiveFileName": "pic32prog-debian-64-2.1.46.tar.gz",
+              "size": "251670",
+              "checksum": "SHA-256:5024369ddec9860236ab277be6fb98b1677f5e20619bd1ed4193aa67fcf6a64e"
+            },
+            {
+              "host": "i686-pc-linux-gnu",
+              "url": "https://github.com/majenkotech/pic32prog-autotools/releases/download/2.1.46/pic32prog-debian-32-2.1.46.tar.gz",
+              "archiveFileName": "pic32prog-debian-32-2.1.46.tar.gz",
+              "size": "123867",
+              "checksum": "SHA-256:de33e5717dfdc6b4558e49d69b1eadad9013e8a48f5d63d607acfabbc685a8a5"
+            },
+            {
+              "host": "i686-mingw32",
+              "url": "https://github.com/majenkotech/pic32prog-autotools/releases/download/2.1.46/pic32prog-win32-2.1.46.tar.gz",
+              "archiveFileName": "pic32prog-win32-2.1.46.tar.gz",
+              "size": "355667",
+              "checksum": "SHA-256:f95cf25b4df8f9df2aa5dc04ae90c67a8c01aad5bc679a20a5ff564ba6af10f0"
+            },
+            {
+              "host": "arm-linux-gnueabihf",
+              "url": "https://github.com/majenkotech/pic32prog-autotools/releases/download/2.1.46/pic32prog-debian-armhf-2.1.46.tar.gz",
+              "archiveFileName": "pic32prog-debian-armhf-2.1.46.tar.gz",
+              "size": "202193",
+              "checksum": "SHA-256:937dccb2e044aa2cec44763e7e82a0e1dc8c65c538cc068158d0bf5d3424008b"
+            }
+          ]
+        },
+        {
+          "name": "drivers-windows",
+          "version": "v2",
+          "systems": [
+            {
+              "host": "i686-mingw32",
+              "url": "https://github.com/chipKIT32/chipKIT-drivers/releases/download/v2.0/chipKIT_USB_drivers_windows_v2.zip",
+              "archiveFileName": "chipKIT_USB_drivers_windows_v2.zip",
+              "size": "962019",
+              "checksum": "SHA-256:39F16651C21F451D106B8CDA5281D16129D755A73728E976A725341F3F671A5F"
+            },
+            {
+              "host": "i386-apple-darwin11",
+              "url": "https://github.com/chipKIT32/chipKIT-drivers/releases/download/v2.0/chipKIT_USB_drivers_otherOSes_v2.zip",
+              "archiveFileName": "chipKIT_USB_drivers_otherOSes_v2.zip",
+              "size": "162",
+              "checksum": "SHA-256:83320249BEAF1BD023A7E42DA0A8717421681B62F070331DF6084048F8D763F8"
+            }, 
+            {
+              "host": "x86_64-linux-gnu",
+              "url": "https://github.com/chipKIT32/chipKIT-drivers/releases/download/v2.0/chipKIT_USB_drivers_otherOSes_v2.zip",
+              "archiveFileName": "chipKIT_USB_drivers_otherOSes_v2.zip",
+              "size": "162",
+              "checksum": "SHA-256:83320249BEAF1BD023A7E42DA0A8717421681B62F070331DF6084048F8D763F8"
+            }, 
+            {
+              "host": "i686-pc-linux-gnu", 
+              "url": "https://github.com/chipKIT32/chipKIT-drivers/releases/download/v2.0/chipKIT_USB_drivers_otherOSes_v2.zip",
+              "archiveFileName": "chipKIT_USB_drivers_otherOSes_v2.zip",
+              "size": "162",
+              "checksum": "SHA-256:83320249BEAF1BD023A7E42DA0A8717421681B62F070331DF6084048F8D763F8"
+            }, 
+            {
+              "host": "arm-linux-gnueabihf",
+              "url": "https://github.com/chipKIT32/chipKIT-drivers/releases/download/v2.0/chipKIT_USB_drivers_otherOSes_v2.zip",
+              "archiveFileName": "chipKIT_USB_drivers_otherOSes_v2.zip",
+              "size": "162",
+              "checksum": "SHA-256:83320249BEAF1BD023A7E42DA0A8717421681B62F070331DF6084048F8D763F8"
+            }
+          ]
+        }
+        
+      ]
+
+    }
+  ]
+}
