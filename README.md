@@ -1,5 +1,5 @@
 # flinduino-core
-# chipkit-core
+
 Downloadable core for the 'Flinders Flinduino' board in Arduino IDE
 
 ## Build Requirements
