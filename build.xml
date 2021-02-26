@@ -458,18 +458,23 @@
         replace="\{runtime.tools.pic32prog.path\}"
         byline="true"
     />
+      
+     <!-- Build Flinduino core for release-->
+    <echo file="tmp/flinduinover.txt">${repository.version}</echo>
+    <replaceregexp file="tmp/flinduinover.txt"
+        match ="-\d-.*"
+	replace=""
+	byline="true"
+    />
+    <loadfile property="FLINDUINOVER" srcFile="tmp/flinduinover.txt"/>
 
-    <!-- get the chipKIT core release -->
-
-    <zip destfile="tmp/chipkit-core-${CHIPKITCOREVER}.${repository.version}.zip">
+    <zip destfile="tmp/flinduino-core-${FLINDUINOVER}.zip">
       <zipfileset dir="pic32" includes="**/*" prefix="pic32" filemode="755"/>
     </zip>
 
-    <!--  <zip destfile="tmp/chipkit-core-${CHIPKITCOREVER}.${repository.version}.zip"
-       basedir="pic32" />
-     -->
-    <checksum algorithm="SHA-256" file="tmp/chipkit-core-${CHIPKITCOREVER}.${repository.version}.zip" fileext=".asc"/>
-    <!-- revert the platform.txt to original version -->
+    <checksum algorithm="SHA-256" file="tmp/flinduino-core-${FLINDUINOVER}.zip" fileext=".asc"/>
+
+
     <exec executable="git">
       <arg value="checkout"/>
       <arg value="pic32/platform.txt"/>
