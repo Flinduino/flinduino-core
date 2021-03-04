@@ -462,7 +462,7 @@
      <!-- Build Flinduino core for release-->
     <echo file="tmp/flinduinover.txt">${repository.version}</echo>
     <replaceregexp file="tmp/flinduinover.txt"
-        match ="-\d-.*"
+        match ="-\d+-.*"
 	replace=""
 	byline="true"
     />
