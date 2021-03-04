@@ -278,8 +278,8 @@ class USBManager {
 
         bool isHighSpeed() { return _driver->isHighSpeed(); }
 
-		USBManager(USBDriver *driver, uint16_t vid, uint16_t pid, const char *mfg = "chipKIT", const char *prod = _BOARD_NAME_, const char *ser = NULL);
-		USBManager(USBDriver &driver, uint16_t vid, uint16_t pid, const char *mfg = "chipKIT", const char *prod = _BOARD_NAME_, const char *ser = NULL) : 
+		USBManager(USBDriver *driver, uint16_t vid, uint16_t pid, const char *mfg = "Flinders", const char *prod = _BOARD_NAME_, const char *ser = NULL);
+		USBManager(USBDriver &driver, uint16_t vid, uint16_t pid, const char *mfg = "Flinders", const char *prod = _BOARD_NAME_, const char *ser = NULL) : 
 		USBManager(&driver, vid, pid, mfg, prod, ser) {}
 //		USBManager(USBDriver *driver, uint16_t vid, uint16_t pid);
 //		USBManager(USBDriver &driver, uint16_t vid, uint16_t pid);

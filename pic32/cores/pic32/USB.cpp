@@ -127,8 +127,8 @@ USBManager::USBManager(USBDriver *driver, uint16_t vid, uint16_t pid, const char
         _serial = ser;
         _serialLen = strlen(ser);
     } else {
-        _serial = _defSerial;
-        _serialLen = _driver->populateDefaultSerial(_defSerial);
+        _serial = NULL;
+        _serialLen = 0x00;
     }
 }
 /*
@@ -242,7 +242,7 @@ void USBManager::onSetupPacket(uint8_t ep, uint8_t *data, uint32_t l) {
                         o.bMaxPacketSize = 0x40;
                         o.idVendor = _vid;
                         o.idProduct = _pid;
-                        o.bcdDevice = 0x0200;
+                        o.bcdDevice = 0x0100;
                         o.iManufacturer = 0x01;
                         o.iProduct = 0x02;
                         o.iSerialNumber = 0x03;
