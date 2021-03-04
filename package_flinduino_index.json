@@ -11,9 +11,9 @@
           "architecture": "pic32",
           "version": "2.1.0",
           "category": "pic32",
-          "url": "https://github.com/craig-dawson/Flinduino/releases/download/2.1.0F/flinduino-core-master-v2.1.0.zip",
+          "url": "https://github.com/Flinduino/flinduino-core/releases/download/v2.1.0/flinduino-core-master-v2.1.0.zip",
           "archiveFileName": "flinduino-core-master-v2.1.0.zip",
-          "checksum": "SHA-256:6e31fc98ccb5db044b8800fc6280e8a9c2c41a1efb7f2ddaf6cff0e95b6b606c",
+          "checksum": "SHA-256:84c3703190aa509e9187d0edd708999b3373a91b684da645a7f72f3d3d353dc2",
           "size": "7352058",
           "help": {
             "online": "https://flindersuni.atlassian.net/wiki/spaces/FLINDUINO/"
