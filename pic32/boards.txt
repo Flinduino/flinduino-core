@@ -1,3 +1,5 @@
+menu.USB=USB Devices
+
 # Flinders Flinduino
 
 Flinduino.name=Flinduino
@@ -31,6 +33,7 @@ Flinduino.build.variant=Flinduino
 
 Flinduino.vid.0=0x04D8
 Flinduino.pid.0=0xE9E1
+
 
 Flinduino.menu.USB.a_cdcacm=Serial
 Flinduino.menu.USB.a_cdcacm.build.extra_flags=-D__USB_ENABLED__ -D__USB_CDCACM__ -D__SERIAL_IS_USB__
