@@ -41,7 +41,7 @@
               "packager": "Flinders",
               "version": "v1",
               "name": "flinduino-bootloader"
-            },
+            }
 		  
           ]
         }
