@@ -34,8 +34,8 @@
             },
             {
               "packager": "Flinders",
-              "version": "v2",
-              "name": "drivers-windows"
+              "version": "v1",
+              "name": "flinduino-drivers-windows"
             }
           ]
         }
@@ -125,43 +125,43 @@
           ]
         },
         {
-          "name": "drivers-windows",
-          "version": "v2",
+          "name": "flinduino-drivers-windows",
+          "version": "v1",
           "systems": [
             {
               "host": "i686-mingw32",
-              "url": "https://github.com/chipKIT32/chipKIT-drivers/releases/download/v2.0/chipKIT_USB_drivers_windows_v2.zip",
-              "archiveFileName": "chipKIT_USB_drivers_windows_v2.zip",
-              "size": "962019",
-              "checksum": "SHA-256:39F16651C21F451D106B8CDA5281D16129D755A73728E976A725341F3F671A5F"
+              "url": "https://github.com/Flinduino/flinduino-driver/releases/download/v1/flinduino_driver_installer_v1.zip",
+              "archiveFileName": "flinduino_driver_installer_v1.zip",
+              "size": "741111",
+              "checksum": "SHA-256:0a60ed84171c06a49055df83c2c10de2a03bae4bdec881e2d3dbedc2cd81b8c7"
             },
             {
               "host": "i386-apple-darwin11",
-              "url": "https://github.com/chipKIT32/chipKIT-drivers/releases/download/v2.0/chipKIT_USB_drivers_otherOSes_v2.zip",
-              "archiveFileName": "chipKIT_USB_drivers_otherOSes_v2.zip",
-              "size": "162",
-              "checksum": "SHA-256:83320249BEAF1BD023A7E42DA0A8717421681B62F070331DF6084048F8D763F8"
+              "url": "https://github.com/Flinduino/flinduino-driver/releases/download/v1/flinduino_driver_installer_v1_otherOS.zip",
+              "archiveFileName": "flinduino_driver_installer_v1_otherOS.zip",
+              "size": "180",
+              "checksum": "SHA-256:612be0d777a5c349dd10d6268f77f8abf62d19d59ae3d0dffb8eb4ba5552931c"
             }, 
             {
               "host": "x86_64-linux-gnu",
-              "url": "https://github.com/chipKIT32/chipKIT-drivers/releases/download/v2.0/chipKIT_USB_drivers_otherOSes_v2.zip",
-              "archiveFileName": "chipKIT_USB_drivers_otherOSes_v2.zip",
-              "size": "162",
-              "checksum": "SHA-256:83320249BEAF1BD023A7E42DA0A8717421681B62F070331DF6084048F8D763F8"
+              "url": "https://github.com/Flinduino/flinduino-driver/releases/download/v1/flinduino_driver_installer_v1_otherOS.zip",
+              "archiveFileName": "flinduino_driver_installer_v1_otherOS.zip",
+              "size": "180",
+              "checksum": "SHA-256:612be0d777a5c349dd10d6268f77f8abf62d19d59ae3d0dffb8eb4ba5552931c"
             }, 
             {
               "host": "i686-pc-linux-gnu", 
-              "url": "https://github.com/chipKIT32/chipKIT-drivers/releases/download/v2.0/chipKIT_USB_drivers_otherOSes_v2.zip",
-              "archiveFileName": "chipKIT_USB_drivers_otherOSes_v2.zip",
-              "size": "162",
-              "checksum": "SHA-256:83320249BEAF1BD023A7E42DA0A8717421681B62F070331DF6084048F8D763F8"
+              "url": "https://github.com/Flinduino/flinduino-driver/releases/download/v1/flinduino_driver_installer_v1_otherOS.zip",
+              "archiveFileName": "flinduino_driver_installer_v1_otherOS.zip",
+              "size": "180",
+              "checksum": "SHA-256:612be0d777a5c349dd10d6268f77f8abf62d19d59ae3d0dffb8eb4ba5552931c"
             }, 
             {
               "host": "arm-linux-gnueabihf",
-              "url": "https://github.com/chipKIT32/chipKIT-drivers/releases/download/v2.0/chipKIT_USB_drivers_otherOSes_v2.zip",
-              "archiveFileName": "chipKIT_USB_drivers_otherOSes_v2.zip",
-              "size": "162",
-              "checksum": "SHA-256:83320249BEAF1BD023A7E42DA0A8717421681B62F070331DF6084048F8D763F8"
+              "url": "https://github.com/Flinduino/flinduino-driver/releases/download/v1/flinduino_driver_installer_v1_otherOS.zip",
+              "archiveFileName": "flinduino_driver_installer_v1_otherOS.zip",
+              "size": "180",
+              "checksum": "SHA-256:612be0d777a5c349dd10d6268f77f8abf62d19d59ae3d0dffb8eb4ba5552931c"
             }
           ]
         }
