@@ -32,6 +32,11 @@
               "version": "v2.1.46",
               "name": "pic32prog"
             },
+	    {
+              "packager": "Flinders",
+              "version": "v1",
+              "name": "flinduino-bootloader"
+            },
             {
               "packager": "Flinders",
               "version": "v1",
