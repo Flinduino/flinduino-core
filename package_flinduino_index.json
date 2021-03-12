@@ -132,8 +132,8 @@
               "host": "i686-mingw32",
               "url": "https://github.com/Flinduino/flinduino-driver/releases/download/v1/flinduino_driver_installer_v1.zip",
               "archiveFileName": "flinduino_driver_installer_v1.zip",
-              "size": "741111",
-              "checksum": "SHA-256:0a60ed84171c06a49055df83c2c10de2a03bae4bdec881e2d3dbedc2cd81b8c7"
+              "size": "728143",
+              "checksum": "SHA-256:efcccc9b08104a7539b3ac20146673b8795e8db94fe7af535398f567c20ad099"
             },
             {
               "host": "i386-apple-darwin11",
