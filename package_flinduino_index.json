@@ -124,6 +124,19 @@
             }
           ]
         },
+	{
+          "name": "flinduino-bootloader",
+          "version": "v1",
+          "systems": [
+            {
+              "host": "i686-mingw32",
+              "url": "https://github.com/Flinduino/flinduino-bootloader/releases/download/v1/Flinduino-bootloader-v1.zip",
+              "archiveFileName": "Flinduino-bootloader-v1.zip",
+              "size": "6293",
+              "checksum": "SHA-256:904935989fb334830aae40a3b66d8293f0ae490f69b5b00bf725f2bef1751eba"
+            }
+          ]
+        },
         {
           "name": "flinduino-drivers-windows",
           "version": "v1",
