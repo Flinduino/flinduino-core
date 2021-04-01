@@ -1,4 +1,5 @@
 menu.USB=USB Devices
+menu.I2C=Port Select for 'Wire' lib
 
 # Flinders Flinduino
 
@@ -34,11 +35,15 @@ Flinduino.build.variant=Flinduino
 Flinduino.vid.0=0x04D8
 Flinduino.pid.0=0xE9E1
 
+Flinduino.menu.I2C.a_I2C=I2C_1 - (23/24)
+Flinduino.menu.I2C.a_I2C.I2C.extra_flags=-DWIRE_USES_I2C1 
+Flinduino.menu.I2C.b_I2C=I2C_2 - (A4/A5)
+Flinduino.menu.I2C.b_I2C.I2C.extra_flags=-DWIRE_USES_I2C2 
 
 Flinduino.menu.USB.a_cdcacm=Serial
-Flinduino.menu.USB.a_cdcacm.build.extra_flags=-D__USB_ENABLED__ -D__USB_CDCACM__ -D__SERIAL_IS_USB__
+Flinduino.menu.USB.a_cdcacm.build.extra_flags={I2C.extra_flags} -D__USB_ENABLED__ -D__USB_CDCACM__ -D__SERIAL_IS_USB__
 Flinduino.menu.USB.b_cdcacm_km=Serial, Keyboard & Mouse
-Flinduino.menu.USB.b_cdcacm_km.build.extra_flags=-D__USB_ENABLED__ -D__USB_CDCACM_KM__ -D__SERIAL_IS_USB__
+Flinduino.menu.USB.b_cdcacm_km.build.extra_flags={I2C.extra_flags} -D__USB_ENABLED__ -D__USB_CDCACM_KM__ -D__SERIAL_IS_USB__
 Flinduino.menu.USB.z_custom=Custom / Disabled
 Flinduino.menu.USB.z_custom.build.extra_flags=
 
