@@ -43,6 +43,7 @@
 /************************************************************************/
 /*  Revision History:                                                   */
 /*    8/4/2014(KeithV): Created                                         */
+/*    1/4/2021(CraigD): updated to allow selection of which i2c port    */
 /************************************************************************/
 // DTWI is not on the path and we don't want the user to have
 // to explicitly include the library. So just grab it and compile it
@@ -50,7 +51,14 @@
 #define ENABLE_END
 #include <Wire.h>
 
-DTWI0 di2c;
+#ifdef WIRE_USES_I2C1
+	DTWI0 di2c;
+#endif
+
+#ifdef WIRE_USES_I2C2
+	DTWI1 di2c;
+#endif
+
 TwoWire Wire;
 
 // Initialize Class Variables //////////////////////////////////////////////////
