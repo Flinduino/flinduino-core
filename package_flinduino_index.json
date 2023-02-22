@@ -14,7 +14,7 @@
           "url": "https://github.com/Flinduino/flinduino-core/releases/download/v2.1.0/flinduino-core-master-v2.1.0.zip",
           "archiveFileName": "flinduino-core-master-v2.1.0.zip",
           "checksum": "SHA-256:fb3e6a4fbe7fb675168be19c885d29b1e03b8ed46d2384a4dc79b25adbdbcb2b",
-          "size": "7352058",
+          "size": "7384773",
           "help": {
             "online": "https://flindersuni.atlassian.net/wiki/spaces/FLINDUINO/"
           },
@@ -52,39 +52,39 @@
           "name": "pic32-tools",
           "systems": [
             {
-              "url": "https://github.com/chipKIT32/chipKIT-compiler-builds/releases/download/1.43-3/pic32-tools-143-3-win32-image.tar.gz",
-              "checksum": "SHA-256:24e2f82884efd5fbbab7d11a6333995187b9a7c4a8a3abc1fade69904ee9fc7a",
+              "url": "https://github.com/Flinduino/pic32-tools-fixes/releases/download/1.43-3/pic32-tools-143-3-win32-image.tar.gz",
+              "checksum": "SHA-256:86fa3e9eda5cbb7837de6b5dd7eaf3ba2ce6505b24dffa575ee1f3a27c57c15b",
               "host": "i686-mingw32",
               "archiveFileName": "pic32-tools-143-3-win32-image.tar.gz",
-              "size": "132994414"
+              "size": "125027712"
             }, 
             {
-              "url": "https://github.com/chipKIT32/chipKIT-compiler-builds/releases/download/1.43-3/pic32-tools-143-3-Darwin-image.tar.gz",
-              "checksum": "SHA-256:8b7e4c659789f3c930499005c83c91ddaac24f0f80396947a60ce385a66cb05d",
+              "url": "https://github.com/Flinduino/pic32-tools-fixes/releases/download/1.43-3/pic32-tools-143-3-Darwin-image.tar.gz",
+              "checksum": "SHA-256:113c50b69c979c32c9ec3d98d21d378a700bbde59baae20adf2eddb3da2a1893",
               "host": "i386-apple-darwin",
               "archiveFileName": "pic32-tools-143-3-Darwin-image.tar.gz",
-              "size": "132122806"
+              "size": "124156079"
             }, 
             {
-              "url": "https://github.com/chipKIT32/chipKIT-compiler-builds/releases/download/1.43-3/pic32-tools-143-3-Linux32-image.tar.gz",
-              "checksum": "SHA-256:A9C9254B8563D48736429A37AA6BA96C6AC28EA5E0A3E7F9B75E860F74F2A50F",
+              "url": "https://github.com/Flinduino/pic32-tools-fixes/releases/download/1.43-3/pic32-tools-143-3-Linux32-image.tar.gz",
+              "checksum": "SHA-256:8f57c60dd128a8fa43bec39e8bb53cc0205ef9d5d583fba657c62d332dfea7b1",
               "host": "x86_64-linux-gnu",
               "archiveFileName": "pic32-tools-143-3-Linux32-image.tar.gz",
-              "size": "134890316"
+              "size": "126802882"
             }, 
             {
-              "url": "https://github.com/chipKIT32/chipKIT-compiler-builds/releases/download/1.43-3/pic32-tools-143-3-Linux32-image.tar.gz",
-              "checksum": "SHA-256:A9C9254B8563D48736429A37AA6BA96C6AC28EA5E0A3E7F9B75E860F74F2A50F",
+              "url": "https://github.com/Flinduino/pic32-tools-fixes/releases/download/1.43-3/pic32-tools-143-3-Linux32-image.tar.gz",
+              "checksum": "SHA-256:8f57c60dd128a8fa43bec39e8bb53cc0205ef9d5d583fba657c62d332dfea7b1",
               "host": "i686-pc-linux-gnu",
               "archiveFileName": "pic32-tools-143-3-Linux32-image.tar.gz",
-              "size": "134890316"
+              "size": "126802882"
             }, 
             {
-              "url": "https://github.com/chipKIT32/chipKIT-compiler-builds/releases/download/1.43-3/pic32-tools-143-3-arm-linux-image.tar.gz",
-              "checksum": "SHA-256:5b4a6cc16bcf3455db5fe9e229212385177b3c4064b7bff31dfb043379c39ce3",
+              "url": "https://github.com/Flinduino/pic32-tools-fixes/releases/download/1.43-3/pic32-tools-143-3-arm-linux-image.tar.gz",
+              "checksum": "SHA-256:415e2ac0a8de54750951f85a9425027cc71ac53253b11daef3dcf3a518552412",
               "host": "arm-linux-gnueabihf",
               "archiveFileName": "pic32-tools-143-3-arm-linux-image.tar.gz",
-              "size": "134299837"
+              "size": "126048282"
             }
           ]
         },
@@ -137,35 +137,35 @@
               "host": "i686-mingw32",
               "url": "https://github.com/Flinduino/flinduino-bootloader/releases/download/v1/Flinduino-bootloader-v1.zip",
               "archiveFileName": "Flinduino-bootloader-v1.zip",
-              "size": "6293",
+              "size": "6501",
               "checksum": "SHA-256:9e0212586d97bfa5403c4a640fe818b2d9bb9f082b0ba44109098620c647c030"
             },
 	    {
               "host": "i386-apple-darwin11",
               "url": "https://github.com/Flinduino/flinduino-bootloader/releases/download/v1/Flinduino-bootloader-v1.zip",
               "archiveFileName": "Flinduino-bootloader-v1.zip",
-              "size": "6293",
+              "size": "6501",
               "checksum": "SHA-256:9e0212586d97bfa5403c4a640fe818b2d9bb9f082b0ba44109098620c647c030"
             }, 
             {
               "host": "x86_64-linux-gnu",
               "url": "https://github.com/Flinduino/flinduino-bootloader/releases/download/v1/Flinduino-bootloader-v1.zip",
               "archiveFileName": "Flinduino-bootloader-v1.zip",
-              "size": "6293",
+              "size": "6501",
               "checksum": "SHA-256:9e0212586d97bfa5403c4a640fe818b2d9bb9f082b0ba44109098620c647c030"
             }, 
             {
               "host": "i686-pc-linux-gnu", 
               "url": "https://github.com/Flinduino/flinduino-bootloader/releases/download/v1/Flinduino-bootloader-v1.zip",
               "archiveFileName": "Flinduino-bootloader-v1.zip",
-              "size": "6293",
+              "size": "6501",
               "checksum": "SHA-256:9e0212586d97bfa5403c4a640fe818b2d9bb9f082b0ba44109098620c647c030"
             }, 
             {
               "host": "arm-linux-gnueabihf",
               "url": "https://github.com/Flinduino/flinduino-bootloader/releases/download/v1/Flinduino-bootloader-v1.zip",
               "archiveFileName": "Flinduino-bootloader-v1.zip",
-              "size": "6293",
+              "size": "6501",
               "checksum": "SHA-256:9e0212586d97bfa5403c4a640fe818b2d9bb9f082b0ba44109098620c647c030"
             }
           ]
@@ -185,28 +185,28 @@
               "host": "i386-apple-darwin11",
               "url": "https://github.com/Flinduino/flinduino-driver/releases/download/v1/flinduino_driver_installer_v1_otherOS.zip",
               "archiveFileName": "flinduino_driver_installer_v1_otherOS.zip",
-              "size": "180",
+              "size": "392",
               "checksum": "SHA-256:1b5d11bc95df9176d71ad4584f682d04eb08c8385ed0576a13abd5373cbd7c3d"
             }, 
             {
               "host": "x86_64-linux-gnu",
               "url": "https://github.com/Flinduino/flinduino-driver/releases/download/v1/flinduino_driver_installer_v1_otherOS.zip",
               "archiveFileName": "flinduino_driver_installer_v1_otherOS.zip",
-              "size": "180",
+              "size": "392",
               "checksum": "SHA-256:1b5d11bc95df9176d71ad4584f682d04eb08c8385ed0576a13abd5373cbd7c3d"
             }, 
             {
               "host": "i686-pc-linux-gnu", 
               "url": "https://github.com/Flinduino/flinduino-driver/releases/download/v1/flinduino_driver_installer_v1_otherOS.zip",
               "archiveFileName": "flinduino_driver_installer_v1_otherOS.zip",
-              "size": "180",
+              "size": "392",
               "checksum": "SHA-256:1b5d11bc95df9176d71ad4584f682d04eb08c8385ed0576a13abd5373cbd7c3d"
             }, 
             {
               "host": "arm-linux-gnueabihf",
               "url": "https://github.com/Flinduino/flinduino-driver/releases/download/v1/flinduino_driver_installer_v1_otherOS.zip",
               "archiveFileName": "flinduino_driver_installer_v1_otherOS.zip",
-              "size": "180",
+              "size": "392",
               "checksum": "SHA-256:1b5d11bc95df9176d71ad4584f682d04eb08c8385ed0576a13abd5373cbd7c3d"
             }
           ]
