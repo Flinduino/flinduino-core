@@ -99,9 +99,12 @@
             <fileset dir="dist/${localplatform}/flinduino/pic32/tools/bin" includes="**/*" />
         </chmod>
         
-        <!-- tar.gz 1.42 version from compiler-builds -->
-        <get dest="${cache}" src="https://github.com/chipKIT32/chipKIT-compiler-builds/releases/download/1.42/pic32-tools-142-Darwin-image.tar.gz" usetimestamp="true" verbose="false" />
-        <untar dest="dist/${localplatform}/flinduino/pic32/compiler" overwrite="false" src="${cache}/pic32-tools-142-Darwin-image.tar.gz" compression="gzip" />
+        <!-- tar.gz 1.43 version from compiler-builds -->
+        <!--get dest="${cache}" src="https://github.com/chipKIT32/chipKIT-compiler-builds/releases/download/1.42/pic32-tools-142-Darwin-image.tar.gz" usetimestamp="true" verbose="false" /-->
+        <!--untar dest="dist/${localplatform}/flinduino/pic32/compiler" overwrite="false" src="${cache}/pic32-tools-142-Darwin-image.tar.gz" compression="gzip" /-->
+
+        <get dest="${cache}" src="https://github.com/Flinduino/pic32-tools-fixes/releases/download/1.43-3/pic32-tools-143-3-Darwin-image.tar.gz" usetimestamp="true" verbose="false" />
+        <untar dest="dist/${localplatform}/flinduino/pic32/compiler" overwrite="false" src="${cache}/pic32-tools-143-3-Darwin-image.tar.gz" compression="gzip" />
 
         <chmod maxparallel="300" perm="+x">
             <fileset dir="dist/${localplatform}/flinduino/pic32/compiler/" includes="**/*" />
@@ -116,9 +119,12 @@
 
         <mkdir dir="dist/${localplatform}/flinduino" />
 
-        <!-- tar.gz 1.42 version from compiler-builds -->
-        <get dest="${cache}" src="https://github.com/chipKIT32/chipKIT-compiler-builds/releases/download/1.42/pic32-tools-142-Linux32-image.tar.gz" usetimestamp="true" verbose="false" />
-        <untar dest="dist/${localplatform}/flinduino/pic32/compiler" overwrite="false" src="${cache}/pic32-tools-142-Linux32-image.tar.gz" compression="gzip" />
+        <!-- tar.gz 1.43 version from compiler-builds -->
+        <!--get dest="${cache}" src="https://github.com/chipKIT32/chipKIT-compiler-builds/releases/download/1.42/pic32-tools-142-Linux32-image.tar.gz" usetimestamp="true" verbose="false" /-->
+        <!--untar dest="dist/${localplatform}/flinduino/pic32/compiler" overwrite="false" src="${cache}/pic32-tools-142-Linux32-image.tar.gz" compression="gzip" /-->
+
+        <get dest="${cache}" src="https://github.com/Flinduino/pic32-tools-fixes/releases/download/1.43-3/pic32-tools-143-3-Linux32-image.tar.gz" usetimestamp="true" verbose="false" />
+        <untar dest="dist/${localplatform}/flinduino/pic32/compiler" overwrite="false" src="${cache}/pic32-tools-143-3-Linux32-image.tar.gz" compression="gzip" />
 
         <chmod maxparallel="300" perm="+x">
             <fileset dir="dist/${localplatform}/flinduino/pic32/compiler/" includes="**/*" />
@@ -143,9 +149,12 @@
 
         <mkdir dir="dist/${localplatform}/flinduino" />
 
-        <!-- tar.gz 1.42 version from compiler-builds -->
-        <get dest="${cache}" src="https://github.com/chipKIT32/chipKIT-compiler-builds/releases/download/1.42/pic32-tools-142-arm-linux-image.tar.gz" usetimestamp="true" verbose="false" />
-        <untar dest="dist/${localplatform}/flinduino/pic32/compiler" overwrite="false" src="${cache}/pic32-tools-142-arm-linux-image.tar.gz" compression="gzip" />
+        <!-- tar.gz 1.43 version from compiler-builds -->
+        <!--get dest="${cache}" src="https://github.com/chipKIT32/chipKIT-compiler-builds/releases/download/1.42/pic32-tools-142-arm-linux-image.tar.gz" usetimestamp="true" verbose="false" /-->
+        <!--untar dest="dist/${localplatform}/flinduino/pic32/compiler" overwrite="false" src="${cache}/pic32-tools-142-arm-linux-image.tar.gz" compression="gzip" /-->
+        
+        <get dest="${cache}" src="https://github.com/Flinduino/pic32-tools-fixes/releases/download/1.43-3/pic32-tools-143-3-arm-linux-image.tar.gz" usetimestamp="true" verbose="false" />
+        <untar dest="dist/${localplatform}/flinduino/pic32/compiler" overwrite="false" src="${cache}/pic32-tools-143-3-arm-linux-image.tar.gz" compression="gzip" />
         
         <chmod maxparallel="300" perm="+x">
             <fileset dir="dist/${localplatform}/flinduino/pic32/compiler/" includes="**/*" />
@@ -169,8 +178,12 @@
         <mkdir dir="dist/${localplatform}/flinduino" />
 
         <!-- tar.gz 1.42 version from compiler-builds -->
-        <get dest="${cache}" src="https://github.com/chipKIT32/chipKIT-compiler-builds/releases/download/1.42/pic32-tools-142-Linux32-image.tar.gz" usetimestamp="true" verbose="false" />
-        <untar dest="dist/${localplatform}/flinduino/pic32/compiler" overwrite="false" src="${cache}/pic32-tools-142-Linux32-image.tar.gz" compression="gzip" />
+        <!--get dest="${cache}" src="https://github.com/chipKIT32/chipKIT-compiler-builds/releases/download/1.42/pic32-tools-142-Linux32-image.tar.gz" usetimestamp="true" verbose="false" /-->
+        <!--untar dest="dist/${localplatform}/flinduino/pic32/compiler" overwrite="false" src="${cache}/pic32-tools-142-Linux32-image.tar.gz" compression="gzip" /-->
+
+        <get dest="${cache}" src="https://github.com/Flinduino/pic32-tools-fixes/releases/download/1.43-3/pic32-tools-143-3-Linux32-image.tar.gz" usetimestamp="true" verbose="false" />
+        <untar dest="dist/${localplatform}/flinduino/pic32/compiler" overwrite="false" src="${cache}/pic32-tools-143-3-Linux32-image.tar.gz" compression="gzip" />
+
         
         <chmod maxparallel="300" perm="+x">
             <fileset dir="dist/${localplatform}/flinduino/pic32/compiler/" includes="**/*" />
@@ -192,9 +205,13 @@
         <property name="localplatform">windows</property>
         <mkdir dir="dist/${localplatform}/flinduino" />
 
-        <!-- tar.gz 1.42 version from compiler-builds -->
-        <get dest="${cache}" src="https://github.com/chipKIT32/chipKIT-compiler-builds/releases/download/1.42/pic32-tools-142-win32-image.tar.gz" usetimestamp="true" verbose="false" />
-        <untar dest="dist/${localplatform}/flinduino/pic32/compiler" overwrite="false" src="${cache}/pic32-tools-142-win32-image.tar.gz" compression="gzip" />
+        <!-- tar.gz 1.43-3 version from compiler-builds -->
+        <!--get dest="${cache}" src="https://github.com/chipKIT32/chipKIT-compiler-builds/releases/download/1.42/pic32-tools-142-win32-image.tar.gz" usetimestamp="true" verbose="false" /-->
+        <!--untar dest="dist/${localplatform}/flinduino/pic32/compiler" overwrite="false" src="${cache}/pic32-tools-142-win32-image.tar.gz" compression="gzip" /-->
+
+        <get dest="${cache}" src="https://github.com/Flinduino/pic32-tools-fixes/releases/download/1.43-3/pic32-tools-143-3-win32-image.tar.gz" usetimestamp="true" verbose="false" />
+        <untar dest="dist/${localplatform}/flinduino/pic32/compiler" overwrite="false" src="${cache}/pic32-tools-143-3-win32-image.tar.gz" compression="gzip" />
+
 
         <chmod maxparallel="300" perm="+x">
             <fileset dir="dist/${localplatform}/flinduino/pic32/compiler/" includes="**/*" />
