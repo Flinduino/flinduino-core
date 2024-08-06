@@ -22,3 +22,8 @@ analogWriteFrequency	KEYWORD2
 #######################################
 
 #SomeConstant	LITERAL1
+PIN_LED1	LITERAL1
+PIN_LED2	LITERAL1
+PIN_LED3	LITERAL1
+
+PIN_BTN1	LITERAL1
