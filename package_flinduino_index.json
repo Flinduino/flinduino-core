@@ -6,6 +6,45 @@
       "websiteURL": "https://flindersuni.atlassian.net/wiki/spaces/FLINDUINO/",
 	"email": "flinduino_git@outlook.com",
       "platforms": [
+		{
+          "name": "Flinduino",
+          "architecture": "pic32",
+          "version": "2.2.0",
+          "category": "pic32",
+          "url": "https://github.com/Flinduino/flinduino-core/releases/download/v2.2.0/flinduino-core-master-v2.2.0.zip",
+          "archiveFileName": "flinduino-core-master-v2.2.0.zip",
+          "checksum": "SHA-256:b2fcc8e9185105ee0910f091e700accb7929221f900f2ccbf6184f2e413c2871",
+          "size": "7396602",
+          "help": {
+            "online": "https://flindersuni.atlassian.net/wiki/spaces/FLINDUINO/"
+          },
+          "boards": [
+            {"name": "Flinders Flinduino"},
+			{"name": "Flinders Flinduino Baseboard"}
+          ],
+          "toolsDependencies": [
+            {
+              "packager": "Flinders",
+              "version": "1.43-pic32gcc",
+              "name": "pic32-tools"
+            }, 
+            {
+              "packager": "Flinders",
+              "version": "v2.1.46",
+              "name": "pic32prog"
+            },
+	    {
+              "packager": "Flinders",
+              "version": "v1",
+              "name": "flinduino-bootloader"
+            },
+            {
+              "packager": "Flinders",
+              "version": "v1",
+              "name": "flinduino-drivers-windows"
+            }
+          ]
+        },
         {
           "name": "Flinduino",
           "architecture": "pic32",
