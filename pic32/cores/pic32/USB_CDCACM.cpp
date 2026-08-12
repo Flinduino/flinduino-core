@@ -177,7 +177,8 @@ bool CDCACM::onSetupPacket(uint8_t __attribute__((unused)) ep, uint8_t __attribu
                 return true;
             case 0x2122:
                 _lineState = data[2];
-                if ((_lineState == 0) && (_baud == 1200)) {
+                // if DTR (_lineState bit 0) off and baud == 1200
+                if (((_lineState & 0b01) == 0) && (_baud == 1200)) {
                     executeSoftReset(ENTER_BOOTLOADER_ON_BOOT);
                 }
                 _manager->sendBuffer(0, NULL, 0);

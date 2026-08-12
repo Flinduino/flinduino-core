@@ -28,6 +28,8 @@ Flinduino.upload.maximum_size=122880
 Flinduino.upload.maximum_data_size=32768
 Flinduino.upload.speed=115200
 Flinduino.upload.tool=pic32prog
+Flinduino.upload.use_1200bps_touch=true
+Flinduino.upload.wait_for_upload_port=true
 
 Flinduino.build.mcu=32MX250F128D
 Flinduino.build.f_cpu=40000000L
@@ -76,6 +78,8 @@ FlinduinoBB.upload.maximum_size=122880
 FlinduinoBB.upload.maximum_data_size=32768
 FlinduinoBB.upload.speed=115200
 FlinduinoBB.upload.tool=pic32prog
+FlinduinoBB.upload.use_1200bps_touch=true
+FlinduinoBB.upload.wait_for_upload_port=true
 
 FlinduinoBB.build.mcu=32MX250F128D
 FlinduinoBB.build.f_cpu=40000000L
