@@ -114,6 +114,13 @@
 #define PIN_LED2    21  //  RA4     SOSCO/RPA4/T1CK/CTED9/RA4
 #define PIN_LED3    19  //  RB3     AN5/C1INA/C2INC/RTCC/RPB3/SCL2/PMWR/CNB3/RB3    
 
+/* Define on and off states for the LEDs */
+#define LED1_ON     HIGH
+#define LED1_OFF    LOW
+#define LED2_ON     HIGH
+#define LED2_OFF    LOW
+#define LED3_ON     HIGH
+#define LED3_OFF    LOW
 
 /* ------------------------------------------------------------ */
 /*                  Button Declarations                         */
