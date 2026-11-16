@@ -39,6 +39,7 @@
 /*							: swapped pins RB4/RB5 (D27/D28)			*/
 /*							: changed definitions for LED1 and LED3	    */
 /*                         	: added AREF definition			            */
+/*  16/11/2026 (Leah Wood): Added definitions for LEDs ON/OFF           */
 /*                                                                      */
 /************************************************************************/
 //* This library is free software; you can redistribute it and/or

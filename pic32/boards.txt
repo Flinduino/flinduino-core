@@ -39,9 +39,9 @@ Flinduino.vid.0=0x04D8
 Flinduino.pid.0=0xE9E1
 
 Flinduino.menu.I2C.a_I2C=I2C_1 - (23/24)
-Flinduino.menu.I2C.a_I2C.I2C.extra_flags=-DWIRE_USES_I2C1 
+Flinduino.menu.I2C.a_I2C.I2C.extra_flags=-DWIRE_USES_I2C1
 Flinduino.menu.I2C.b_I2C=I2C_2 - (A4/A5)
-Flinduino.menu.I2C.b_I2C.I2C.extra_flags=-DWIRE_USES_I2C2 
+Flinduino.menu.I2C.b_I2C.I2C.extra_flags=-DWIRE_USES_I2C2
 
 Flinduino.menu.USB.a_cdcacm=Serial
 Flinduino.menu.USB.a_cdcacm.build.extra_flags={I2C.extra_flags} -D__USB_ENABLED__ -D__USB_CDCACM__ -D__SERIAL_IS_USB__
@@ -56,6 +56,61 @@ Flinduino.menu.bootload_mode.auto.upload.wait_for_upload_port=true
 Flinduino.menu.bootload_mode.man=Manual
 Flinduino.menu.bootload_mode.man.upload.use_1200bps_touch=false
 Flinduino.menu.bootload_mode.man.upload.wait_for_upload_port=false
+
+#----------------------------------------------------------------
+# Flinders Flinduino Rev 2
+#----------------------------------------------------------------
+
+FlinduinoR2.name=Flinduino Rev 2
+FlinduinoR2.group=Flinders
+
+# new items
+FlinduinoR2.platform=pic32
+FlinduinoR2.build.board=_BOARD_FLINDUINO_REV2
+
+FlinduinoR2.usb.enabled=true
+FlinduinoR2.usb.default=a_cdcacm
+
+FlinduinoR2.ccflags=-Map="map.map"
+FlinduinoR2.ldscript=chipKIT-application-32MX250F128.ld
+# Use this -G1024 option ONLY for boards with 64K RAM or less
+FlinduinoR2.compiler.c.extra_flags=-G1024
+FlinduinoR2.compiler.cpp.extra_flags=-G1024
+# end of new items
+
+FlinduinoR2.upload.protocol=stk500v2
+# 128KB - 4K for EEPROM - 4K for bootloader
+FlinduinoR2.upload.maximum_size=122880
+FlinduinoR2.upload.maximum_data_size=32768
+FlinduinoR2.upload.speed=115200
+FlinduinoR2.upload.tool=pic32prog
+
+FlinduinoR2.build.mcu=32MX250F128D
+FlinduinoR2.build.f_cpu=40000000L
+FlinduinoR2.build.core=pic32
+FlinduinoR2.build.variant=Flinduino_Rev2
+
+FlinduinoR2.vid.0=0x04D8
+FlinduinoR2.pid.0=0xE9E1
+
+FlinduinoR2.menu.I2C.a_I2C=I2C_1 - (23/24)
+FlinduinoR2.menu.I2C.a_I2C.I2C.extra_flags=-DWIRE_USES_I2C1
+FlinduinoR2.menu.I2C.b_I2C=I2C_2 - (A4/A5)
+FlinduinoR2.menu.I2C.b_I2C.I2C.extra_flags=-DWIRE_USES_I2C2
+
+FlinduinoR2.menu.USB.a_cdcacm=Serial
+FlinduinoR2.menu.USB.a_cdcacm.build.extra_flags={I2C.extra_flags} -D__USB_ENABLED__ -D__USB_CDCACM__ -D__SERIAL_IS_USB__
+FlinduinoR2.menu.USB.b_cdcacm_km=Serial, Keyboard & Mouse
+FlinduinoR2.menu.USB.b_cdcacm_km.build.extra_flags={I2C.extra_flags} -D__USB_ENABLED__ -D__USB_CDCACM_KM__ -D__SERIAL_IS_USB__
+FlinduinoR2.menu.USB.z_custom=Custom / Disabled
+FlinduinoR2.menu.USB.z_custom.build.extra_flags={I2C.extra_flags}
+
+FlinduinoR2.menu.bootload_mode.auto=Automatic
+FlinduinoR2.menu.bootload_mode.auto.upload.use_1200bps_touch=true
+FlinduinoR2.menu.bootload_mode.auto.upload.wait_for_upload_port=true
+FlinduinoR2.menu.bootload_mode.man=Manual
+FlinduinoR2.menu.bootload_mode.man.upload.use_1200bps_touch=false
+FlinduinoR2.menu.bootload_mode.man.upload.wait_for_upload_port=false
 
 #----------------------------------------------------------------
 # Flinders Flinduino_Baseboard
@@ -94,9 +149,9 @@ FlinduinoBB.vid.0=0x04D8
 FlinduinoBB.pid.0=0xE9E1
 
 FlinduinoBB.menu.I2C.a_I2C=I2C_1 - (23/24)
-FlinduinoBB.menu.I2C.a_I2C.I2C.extra_flags=-DWIRE_USES_I2C1 
+FlinduinoBB.menu.I2C.a_I2C.I2C.extra_flags=-DWIRE_USES_I2C1
 FlinduinoBB.menu.I2C.b_I2C=I2C_2 - (A4/A5)
-FlinduinoBB.menu.I2C.b_I2C.I2C.extra_flags=-DWIRE_USES_I2C2 
+FlinduinoBB.menu.I2C.b_I2C.I2C.extra_flags=-DWIRE_USES_I2C2
 
 FlinduinoBB.menu.USB.a_cdcacm=Serial
 FlinduinoBB.menu.USB.a_cdcacm.build.extra_flags={I2C.extra_flags} -D__USB_ENABLED__ -D__USB_CDCACM__ -D__SERIAL_IS_USB__

@@ -35,6 +35,7 @@
 /*                              #endif  // OPT_BOARD_INTERNAL           */
 /*                           :  Changed Name to Flinduino               */
 /*                           :  Added Flinduino USB PID and VID         */
+/*  16/11/2026 (Leah Wood): Added definitions for LEDs ON/OFF           */
 /*                                                                      */
 /*                                                                      */
 /************************************************************************/
@@ -344,10 +345,10 @@ extern const uint8_t    external_int_to_digital_pin_PGM[];
 #define       _SER0_IPL_ISR        _UART1_IPL_ISR
 #define       _SER0_IPL            _UART1_IPL_IPC
 #define       _SER0_SPL            _UART1_SPL_IPC
-#define       _SER0_TX_OUT         PPS_OUT_U1TX     // RPB3R = U1TX = 1   
+#define       _SER0_TX_OUT         PPS_OUT_U1TX     // RPB3R = U1TX = 1
 #define       _SER0_TX_PIN         1                // RPA0,RPB3, RPB4,RPB15,RPB7,RPC7,RPC0,RPC5:
 #define       _SER0_RX_IN          PPS_IN_U1RX      // U1RXR = RPB13 = 3
-#define       _SER0_RX_PIN         0                // RPA2, RPB6, RPA4, RPB13, RPB2, RPC6, RPC1, RPC3: 
+#define       _SER0_RX_PIN         0                // RPA2, RPB6, RPA4, RPB13, RPB2, RPC6, RPC1, RPC3:
 
 
 /* Serial port 1 uses UART2
@@ -386,12 +387,12 @@ extern const uint8_t    external_int_to_digital_pin_PGM[];
 #define _SPI_MOSI_OUT   PPS_OUT_SDO1
 #define _SPI_MOSI_PIN   MOSI
 
-/* SPI1 
+/* SPI1
 */
 
-// 10 CS1       RPA0, RPB3, RPB4, RPB15, RPB7, RPC7, RPC0, RPC5:    RB7     RPB7/CTED3/PMD5/INT0/RB7 
+// 10 CS1       RPA0, RPB3, RPB4, RPB15, RPB7, RPC7, RPC0, RPC5:    RB7     RPB7/CTED3/PMD5/INT0/RB7
 // 12 SDI1                                                          RB15    AN9/C3INA/RPB15/SCK2/CTED6/PMCS1/RB15
-// 11 SDO1      RPA1, RPB5, RPB1, RPB11, RPB8, RPA8, RPC8, RPA9:    RA8     TDO/RPA8/PMA8/RA8   
+// 11 SDO1      RPA1, RPB5, RPB1, RPB11, RPB8, RPA8, RPC8, RPA9:    RA8     TDO/RPA8/PMA8/RA8
 // 13 SCK1      Not remapable 16/A2     RB14    CVREFOUT/AN10/C3INB/RPB14/VBUSON/SCK1/CTED5/RB14
 #define _DSPI0_BASE         _SPI1_BASE_ADDRESS
 #define _DSPI0_ERR_IRQ      _SPI1_ERR_IRQ
@@ -407,7 +408,7 @@ extern const uint8_t    external_int_to_digital_pin_PGM[];
 #define _DSPI0_MOSI_OUT     PPS_OUT_SDO1
 #define _DSPI0_MOSI_PIN     11  // SDO1     RPA1, RPB5, RPB1, RPB11, RPB8, RPA8, RPC8, RPA9:    RA8     TDO/RPA8/PMA8/RA8
 
-/* SPI2 
+/* SPI2
 */
 // 4    CS2     RPA3, RPB14, RPB0, RPB10, RPB9, RPC9, RPC2, RPC4:   RC4     RPC4/PMA4/RC4
 // 6    SDI2        RPA2, RPB6, RPA4, RPB13, RPB2, RPC6, RPC1, RPC3:    RPC6/PMA1/RC6
@@ -425,13 +426,13 @@ extern const uint8_t    external_int_to_digital_pin_PGM[];
 #define _DSPI1_MISO_IN      PPS_IN_SDI2
 #define _DSPI1_MISO_PIN     6       // SDI2     RPA2, RPB6, RPA4, RPB13, RPB2, RPC6, RPC1, RPC3:    RPC6/PMA1/RC6
 #define _DSPI1_MOSI_OUT     PPS_OUT_SDO2
-#define _DSPI1_MOSI_PIN     8       // SDO2     RPA1, RPB5, RPB1, RPB11, RPB8, RPA8, RPC8, RPA9:    RPC8/PMA5/RC8 
+#define _DSPI1_MOSI_PIN     8       // SDO2     RPA1, RPB5, RPB1, RPB11, RPB8, RPA8, RPC8, RPA9:    RPC8/PMA5/RC8
 
 /* ------------------------------------------------------------ */
 /*                  I2C Port Declarations                       */
 /* ------------------------------------------------------------ */
 
-/* The standard I2C1 port uses I2C1 (SCL1/SDA1). 
+/* The standard I2C1 port uses I2C1 (SCL1/SDA1).
 ** RB8/RB9 pins 22/23
 */
 #define _TWI_BASE       _I2C1_BASE_ADDRESS
@@ -452,7 +453,7 @@ extern const uint8_t    external_int_to_digital_pin_PGM[];
 #define _DTWI0_IPL_ISR  IPL3SOFT
 #define _DTWI0_IPL      3
 #define _DTWI0_SPL      0
-#define     _DTWI0_SCL_PIN      24 
+#define     _DTWI0_SCL_PIN      24
 #define     _DTWI0_SDA_PIN      23
 
 /* Declarations for Digilent DTWI library.
@@ -464,7 +465,7 @@ extern const uint8_t    external_int_to_digital_pin_PGM[];
 #define _DTWI1_IPL_ISR  IPL3SOFT
 #define _DTWI1_IPL      3
 #define _DTWI1_SPL      0
-#define     _DTWI1_SCL_PIN      A5 
+#define     _DTWI1_SCL_PIN      A5
 #define     _DTWI1_SDA_PIN      A4
 
 
