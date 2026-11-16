@@ -1,5 +1,6 @@
 menu.USB=USB Devices
 menu.I2C=Port Select for 'Wire' lib
+menu.bootload_mode=Bootloader Mode
 
 #----------------------------------------------------------------
 # Flinders Flinduino
@@ -28,8 +29,6 @@ Flinduino.upload.maximum_size=122880
 Flinduino.upload.maximum_data_size=32768
 Flinduino.upload.speed=115200
 Flinduino.upload.tool=pic32prog
-Flinduino.upload.use_1200bps_touch=true
-Flinduino.upload.wait_for_upload_port=true
 
 Flinduino.build.mcu=32MX250F128D
 Flinduino.build.f_cpu=40000000L
@@ -50,6 +49,13 @@ Flinduino.menu.USB.b_cdcacm_km=Serial, Keyboard & Mouse
 Flinduino.menu.USB.b_cdcacm_km.build.extra_flags={I2C.extra_flags} -D__USB_ENABLED__ -D__USB_CDCACM_KM__ -D__SERIAL_IS_USB__
 Flinduino.menu.USB.z_custom=Custom / Disabled
 Flinduino.menu.USB.z_custom.build.extra_flags={I2C.extra_flags}
+
+Flinduino.menu.bootload_mode.auto=Automatic
+Flinduino.menu.bootload_mode.auto.upload.use_1200bps_touch=true
+Flinduino.menu.bootload_mode.auto.upload.wait_for_upload_port=true
+Flinduino.menu.bootload_mode.man=Manual
+Flinduino.menu.bootload_mode.man.upload.use_1200bps_touch=false
+Flinduino.menu.bootload_mode.man.upload.wait_for_upload_port=false
 
 #----------------------------------------------------------------
 # Flinders Flinduino_Baseboard
@@ -78,8 +84,6 @@ FlinduinoBB.upload.maximum_size=122880
 FlinduinoBB.upload.maximum_data_size=32768
 FlinduinoBB.upload.speed=115200
 FlinduinoBB.upload.tool=pic32prog
-FlinduinoBB.upload.use_1200bps_touch=true
-FlinduinoBB.upload.wait_for_upload_port=true
 
 FlinduinoBB.build.mcu=32MX250F128D
 FlinduinoBB.build.f_cpu=40000000L
@@ -100,3 +104,10 @@ FlinduinoBB.menu.USB.b_cdcacm_km=Serial, Keyboard & Mouse
 FlinduinoBB.menu.USB.b_cdcacm_km.build.extra_flags={I2C.extra_flags} -D__USB_ENABLED__ -D__USB_CDCACM_KM__ -D__SERIAL_IS_USB__
 FlinduinoBB.menu.USB.z_custom=Custom / Disabled
 FlinduinoBB.menu.USB.z_custom.build.extra_flags={I2C.extra_flags}
+
+FlinduinoBB.menu.bootload_mode.auto=Automatic
+FlinduinoBB.menu.bootload_mode.auto.upload.use_1200bps_touch=true
+FlinduinoBB.menu.bootload_mode.auto.upload.wait_for_upload_port=true
+FlinduinoBB.menu.bootload_mode.man=Manual
+FlinduinoBB.menu.bootload_mode.man.upload.use_1200bps_touch=false
+FlinduinoBB.menu.bootload_mode.man.upload.wait_for_upload_port=false
